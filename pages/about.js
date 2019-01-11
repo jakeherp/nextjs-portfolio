@@ -1,10 +1,10 @@
 import React from "react";
 import BaseLayout from "../components/layouts/BaseLayout";
 
-const Index = () => (
+const About = () => (
   <BaseLayout>
-    <h1>Hello World</h1>
+    <h1>About</h1>
   </BaseLayout>
 );
 
-export default Index;
+export default About;
