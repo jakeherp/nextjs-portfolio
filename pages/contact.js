@@ -1,9 +1,12 @@
 import React from "react";
 import BaseLayout from "../components/layouts/BaseLayout";
+import BasePage from "../components/BasePage";
 
 const Contact = () => (
   <BaseLayout>
-    <h1>Contact</h1>
+    <BasePage>
+      <h1>Contact</h1>
+    </BasePage>
   </BaseLayout>
 );
 

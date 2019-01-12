@@ -1,6 +1,7 @@
 import React from "react";
 import BaseLayout from "../components/layouts/BaseLayout";
 import { Link } from "../routes";
+import BasePage from "../components/BasePage";
 
 import axios from "axios";
 import { ReadStream } from "tty";
@@ -40,8 +41,10 @@ class Portfolio extends React.Component {
 
     return (
       <BaseLayout>
-        <h1>Portfolio</h1>
-        <ul>{this.renderPosts(posts)}</ul>
+        <BasePage>
+          <h1>Portfolio</h1>
+          <ul>{this.renderPosts(posts)}</ul>
+        </BasePage>
       </BaseLayout>
     );
   }

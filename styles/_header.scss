@@ -1,0 +1,29 @@
+.absolute {
+  position: absolute;
+}
+
+// HEADER
+.port-navbar.port-default {
+  width: 100%;
+  z-index: 15;
+  padding: 2rem;
+  .port-navbar {
+    &-brand {
+      color: white;
+      font-size: 2rem;
+    }
+
+    &-item {
+      margin: 0 0.5rem;
+    }
+
+    &-link {
+      color: rgba(255, 255, 255, 0.7);
+      &.active,
+      &:hover,
+      &:focus {
+        color: #fff;
+      }
+    }
+  }
+}

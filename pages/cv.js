@@ -1,9 +1,12 @@
 import React from "react";
 import BaseLayout from "../components/layouts/BaseLayout";
+import BasePage from "../components/BasePage";
 
 const Cv = () => (
   <BaseLayout>
-    <h1>CV</h1>
+    <BasePage>
+      <h1>CV</h1>
+    </BasePage>
   </BaseLayout>
 );
 

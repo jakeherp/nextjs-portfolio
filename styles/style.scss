@@ -1,6 +1,17 @@
 @import url("https://use.typekit.net/ypz0fwx.css");
 
+@import "./vars";
+@import "./index";
+@import "./header";
+
 html,
 body {
   font-family: "proxima-nova", Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.base-page {
+  padding-top: 150px;
+  color: #fff;
 }
