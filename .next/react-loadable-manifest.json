@@ -1,13 +1,33 @@
 {
-  "./noop": [
+  "bootstrap/dist/css/bootstrap.min.css": [
     {
-      "id": "./node_modules/next/dist/client/noop.js",
-      "name": "./node_modules/next/dist/client/noop.js",
-      "file": "static/chunks/0.js",
-      "publicPath": "static/chunks/0.js"
+      "id": "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+      "name": "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
     }
   ],
-  "../../styles/style.scss": [
+  "undefined": [
+    {
+      "id": 2,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 3,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 6,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "../styles/style.scss": [
     {
       "id": "./styles/style.scss",
       "name": "./styles/style.scss",
@@ -15,12 +35,12 @@
       "publicPath": "static/chunks/styles.js"
     }
   ],
-  "undefined": [
+  "./noop": [
     {
-      "id": 4,
-      "name": null,
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
+      "id": "./node_modules/next/dist/client/noop.js",
+      "name": "./node_modules/next/dist/client/noop.js",
+      "file": "static/chunks/0.js",
+      "publicPath": "static/chunks/0.js"
     }
   ]
 }

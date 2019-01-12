@@ -1,9 +1,13 @@
 import React from "react";
 import BaseLayout from "../components/layouts/BaseLayout";
 
+import { Button, Container } from "reactstrap";
+
 const Index = () => (
   <BaseLayout>
-    <h1>Hello World</h1>
+    <Container>
+      <Button color="danger">Danger!</Button>
+    </Container>
   </BaseLayout>
 );
 
