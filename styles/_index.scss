@@ -1,6 +1,8 @@
 // WRAPPER
 .cover {
-  background: #272a36;
+  background-color: #272a36;
+  background-image: url("/static/images/background-index.png");
+  background-size: cover;
   overflow: hidden;
   position: relative;
 }
@@ -16,6 +18,7 @@
   top: 150px;
   width: 100%;
   padding: 150px 0 0;
+  margin-bottom: 3rem;
 }
 
 .hero-section {
