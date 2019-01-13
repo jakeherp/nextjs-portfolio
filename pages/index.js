@@ -12,14 +12,14 @@ const Index = () => (
     <div className="main-section">
       <Container>
         <Row>
-          <Col md="6">
+          <Col md="5">
             <img
               src="/static/images/jacob_herper.jpg"
               alt="Jacob Herper"
               className="photo"
             />
           </Col>
-          <Col md="6" className="hero-welcome-wrapper">
+          <Col md="7" className="hero-welcome-wrapper">
             <Typed
               loop
               typeSpeed={80}
@@ -38,10 +38,10 @@ const Index = () => (
             />
             <div className="hero-welcome-bio">
               <p>
-                As a Web Developer, I love innovations and technologies right
-                from childhood. I was opportune to learn HTML at age 12 and PHP
-                at age 15, for this reason, I enjoy multi-tasking and getting to
-                wear many hats.
+                As a Web Developer, I love innovations and technologies. I help
+                companies develop outstanding and highly optimised websites and
+                web apps, to operate more efficiently and communicate
+                effectively through custom-built web solutions.
               </p>
               <a
                 href="https://github.com/jakeherp"

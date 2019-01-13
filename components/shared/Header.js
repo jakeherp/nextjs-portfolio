@@ -13,6 +13,7 @@ import {
   DropdownItem
 } from "reactstrap";
 import Link from "next/link";
+import auth0 from "../../services/auth0";
 
 const MyNavLink = props => {
   const { route, title } = props;
@@ -22,6 +23,18 @@ const MyNavLink = props => {
       <a className="nav-link port-navbar-link">{title}</a>
     </Link>
   );
+};
+
+const Login = () => {
+  return (
+    <span onClick={auth0.login} className="nav-link port-navbar-link login">
+      Login
+    </span>
+  );
+};
+
+const Logout = () => {
+  return <span className="nav-link port-navbar-link login">Logout</span>;
 };
 
 export default class Example extends React.Component {
@@ -63,6 +76,12 @@ export default class Example extends React.Component {
               </NavItem>
               <NavItem className="port-navbar-item">
                 <MyNavLink route="/contact" title="Contact" />
+              </NavItem>
+              <NavItem className="port-navbar-item">
+                <Login />
+              </NavItem>
+              <NavItem className="port-navbar-item">
+                <Logout />
               </NavItem>
             </Nav>
           </Collapse>
