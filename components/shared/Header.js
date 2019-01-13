@@ -47,7 +47,7 @@ export default class Example extends React.Component {
           dark
           expand="md">
           <NavbarBrand className="port-navbar-brand" href="/">
-            <span class="accent">Jacob</span> Herper
+            <span className="accent">Jacob</span> Herper
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -56,13 +56,13 @@ export default class Example extends React.Component {
                 <MyNavLink route="/" title="Home" />
               </NavItem>
               <NavItem className="port-navbar-item">
-                <MyNavLink route="/portfolio/" title="Portfolio" />
+                <MyNavLink route="/portfolio" title="Portfolio" />
               </NavItem>
               <NavItem className="port-navbar-item">
-                <MyNavLink route="/cv/" title="CV" />
+                <MyNavLink route="/cv" title="CV" />
               </NavItem>
               <NavItem className="port-navbar-item">
-                <MyNavLink route="/contact/" title="Contact" />
+                <MyNavLink route="/contact" title="Contact" />
               </NavItem>
             </Nav>
           </Collapse>

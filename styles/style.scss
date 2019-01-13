@@ -19,3 +19,11 @@ body {
 .navbar-dark .navbar-toggler-icon {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTI5NiwxMzZjMC0yMi0xOC00MC00MC00MHMtNDAsMTgtNDAsNDBzMTgsNDAsNDAsNDBTMjk2LDE1OCwyOTYsMTM2eiBNMjk2LDM3NmMwLTIyLTE4LTQwLTQwLTQwcy00MCwxOC00MCw0MHMxOCw0MCw0MCw0MFMyOTYsMzk4LDI5NiwzNzZ6IE0yOTYsMjU2YzAtMjItMTgtNDAtNDAtNDBzLTQwLDE4LTQwLDQwYzAsMjIsMTgsNDAsNDAsNDBTMjk2LDI3OCwyOTYsMjU2eiIvPjwvc3ZnPg==) !important;
 }
+
+a {
+  transition: 0.2s;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+}

@@ -1,8 +1,7 @@
 // WRAPPER
 .cover {
-  background-color: #272a36;
+  background: rgba(40, 42, 54, 1);
   background-image: url("/static/images/background-index.png");
-  background-size: cover;
   overflow: hidden;
   position: relative;
 }
@@ -23,13 +22,13 @@
 
 .hero-section {
   h2 {
-    color: white;
+    color: $primary;
     font-weight: bold;
     margin-bottom: 10px;
   }
 
   perspective: 1000px;
-  color: white;
+  color: $primary;
   width: 400px;
   position: relative;
 
@@ -52,14 +51,13 @@
 }
 
 .hero-welcome-text > h1 {
-  color: white;
+  color: $primary;
   text-transform: uppercase;
   font-size: 27px;
   margin-top: 80px;
 }
 
 .hero-welcome-bio {
-  margin-top: 20px;
   color: white;
 
   .fa-stack {
@@ -102,8 +100,8 @@
   height: 100%;
   position: absolute;
   top: 0;
-  box-shadow: -17px 13px 41px rgba(13, 78, 158, 0.6);
-  border: 2px solid #3bace5;
+  box-shadow: -17px 13px 41px rgba(0, 0, 0, 0.6);
+  border: 2px solid $primary;
 
   .shadow-inner {
     width: 100%;
@@ -127,4 +125,18 @@
 .accent {
   color: $accent;
   font-weight: bold;
+}
+
+.icons {
+  margin-right: 1rem;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.photo {
+  max-width: 70%;
+  border-radius: 50%;
+  margin: 0 auto;
 }
