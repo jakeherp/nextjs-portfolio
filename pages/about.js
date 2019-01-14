@@ -4,8 +4,8 @@ import BasePage from "../components/BasePage";
 
 const About = () => (
   <BaseLayout>
-    <BasePage>
-      <h1>About</h1>
+    <BasePage title="About">
+      <p>This is an about page</p>
     </BasePage>
   </BaseLayout>
 );

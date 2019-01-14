@@ -27,8 +27,7 @@ class Work extends React.Component {
 
     return (
       <BaseLayout>
-        <BasePage>
-          <h1>{work.title}</h1>
+        <BasePage title={work.title}>
           <p>{work.body}</p>
         </BasePage>
       </BaseLayout>

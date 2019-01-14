@@ -8,7 +8,7 @@ import LogoTwitter from "react-ionicons/lib/LogoTwitter";
 import { Button, Container, Row, Col } from "reactstrap";
 
 const Index = () => (
-  <BaseLayout className="cover">
+  <BaseLayout className="cover" headerType="index">
     <div className="main-section">
       <Container>
         <Row>

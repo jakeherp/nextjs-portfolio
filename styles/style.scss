@@ -1,8 +1,12 @@
 @import url("https://use.typekit.net/ypz0fwx.css");
 
 @import "./vars";
-@import "./index";
 @import "./header";
+
+// PAGES
+@import "./index";
+@import "./portfolio";
+@import "./cv";
 
 html,
 body {
@@ -13,7 +17,18 @@ body {
 
 .base-page {
   padding-top: 150px;
-  color: #fff;
+  color: $primary;
+  background: #f3f3f3;
+  min-height: 100vh;
+
+  .page-header {
+    .page-header-title {
+      font-weight: 700;
+      color: black;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -30,4 +45,9 @@ a {
 
 span.login {
   cursor: pointer;
+}
+
+.btn-secondary {
+  background: $accent;
+  border-color: darken($accent, 10%);
 }
