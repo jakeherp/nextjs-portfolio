@@ -13,11 +13,15 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/cv": [
+    "/portfolio": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/callback": [
+    "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
