@@ -20,9 +20,10 @@ class Portfolio extends React.Component {
     let posts = [];
 
     try {
-      const response = await axios.get(
-        "https://www.behance.net/v2/users/jakeherp/projects/?api_key=Hvz37g2VCwNq7NLdPSdr4ITJOSN7QyAz"
-      );
+      const url = process.browser
+        ? "/user-profile"
+        : "http://localhost:3000/user-profile";
+      const response = await axios.get(url);
       posts = response.data.projects;
     } catch (err) {
       console.error(err);
@@ -39,16 +40,13 @@ class Portfolio extends React.Component {
         <React.Fragment>
           <span>
             <Card className="portfolio-card">
-              <CardHeader className="portfolio-card-header">
-                {post.name}
-              </CardHeader>
               <CardBody>
-                <p className="portfolio-card-city"> Some Location {index} </p>
+                <img src={post.covers.max_808} alt={post.name} width="100%" />
                 <CardTitle className="portfolio-card-title">
-                  Some Company {index}
+                  {post.name}
                 </CardTitle>
                 <CardText className="portfolio-card-text">
-                  Some Description {index}
+                  {post.fields[0]}
                 </CardText>
                 <div className="readMore"> </div>
               </CardBody>

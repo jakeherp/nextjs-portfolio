@@ -1,9 +1,10 @@
 .portfolio-card {
-  background-image: linear-gradient(45deg, #4e54c8 0%, #8f94fb 100%);
-  border: none;
-  color: white;
+  background: #fff;
+  border: 1px solid #eee;
+  color: $primary;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s;
   margin-bottom: 20px;
+  text-align: center;
 
   &:hover {
     cursor: pointer;
@@ -14,15 +15,6 @@
     background: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
   }
 
-  &-header {
-    padding: 3px;
-    padding-right: 7px;
-    text-align: right;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 17px;
-  }
-
   &-city {
     color: inherit;
   }
@@ -31,7 +23,6 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 1.1;
-    text-transform: uppercase;
     margin-bottom: 10px;
   }
 
@@ -39,7 +30,6 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.3;
-    text-transform: uppercase;
     margin-bottom: 50px;
   }
 }
