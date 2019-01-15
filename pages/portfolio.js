@@ -18,11 +18,10 @@ import { ReadStream } from "tty";
 class Portfolio extends React.Component {
   static async getInitialProps() {
     let posts = [];
-
     try {
       const url = process.browser
-        ? "/user-profile"
-        : "http://localhost:3000/user-profile";
+        ? "/api/user-profile"
+        : "http://localhost:3000/api/user-profile";
       const response = await axios.get(url);
       posts = response.data.projects;
     } catch (err) {
