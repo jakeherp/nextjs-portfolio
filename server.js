@@ -23,6 +23,19 @@ app
       );
     });
 
+    server.get(`/api/portfolio-item/${posts.id}`, (req, res) => {
+      request(
+        `https://www.behance.net/v2/projects/${
+          posts.id
+        }/?api_key=Hvz37g2VCwNq7NLdPSdr4ITJOSN7QyAz`,
+        function(error, response, body) {
+          if (!error && response.statusCode == 200) {
+            res.json(JSON.parse(body));
+          }
+        }
+      );
+    });
+
     server.get("*", (req, res) => {
       return handle(req, res);
     });

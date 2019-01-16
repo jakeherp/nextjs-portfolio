@@ -6,29 +6,30 @@ import axios from "axios";
 import Portfolio from "./portfolio";
 
 class Work extends React.Component {
-  static async getInitialProps({ query }) {
-    const workId = query.id;
-    let work = {};
-
+  static async getInitialProps() {
+    let posts = [];
     try {
-      const response = await axios.get(
-        `https://jsonplaceholder.typicode.com/posts/${workId}`
-      );
-      work = response.data;
+      const url = process.browser
+        ? `/api/portfolio-item/${posts.id}`
+        : `http://localhost:3000/api/portfolio-item/${posts.id}`;
+      const response = await axios.get(url);
+      posts = response.data.projects;
     } catch (err) {
       console.error(err);
     }
 
-    return { work };
+    return {
+      posts: posts.splice(0, 9)
+    };
   }
 
   render() {
-    const { work } = this.props;
+    const { posts } = this.props;
 
     return (
       <BaseLayout>
-        <BasePage title={work.title}>
-          <p>{work.body}</p>
+        <BasePage title={posts.id}>
+          <p>A work item</p>
         </BasePage>
       </BaseLayout>
     );

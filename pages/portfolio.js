@@ -40,7 +40,9 @@ class Portfolio extends React.Component {
           <span>
             <Card className="portfolio-card">
               <CardBody>
-                <img src={post.covers.max_808} alt={post.name} width="100%" />
+                <a href={`/work/${post.id}`}>
+                  <img src={post.covers.max_808} alt={post.name} width="100%" />
+                </a>
                 <CardTitle className="portfolio-card-title">
                   {post.name}
                 </CardTitle>
